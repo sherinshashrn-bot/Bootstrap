@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ <title>student profile</title>
+</head>
+<body>
+  <div class="container">
+     <div class="text-center mb-4">
+      <h1 class="display-5 fw-bold text-primary">NovaTech Solutions</h1>
+      <p class="lead text-muted">Innovating Together for a Smarter Future</p>
+    </div>
+
+  
+    <blockquote class="blockquote text-center">
+      <p class="mb-0 fst-italic">"Alone we can do so little; together we can do so much."</p>
+      <footer class="blockquote-footer mt-1">Helen Keller</footer>
+    </blockquote>
+
+    
+    <img src=""alt="Team Photo" class="team-photo">
+
+  
+    <section class="my-5 text-center">
+      <h3 class="text-primary mb-3">Our Core Values</h3>
+      <ul class="list-group list-group-flush d-inline-block text-start">
+        <li class="list-group-item"> Collaboration — We achieve more together.</li>
+        <li class="list-group-item"> Innovation — We embrace creativity and change.</li>
+        <li class="list-group-item"> Growth — We invest in our people and future.</li>
+      </ul>
+    </section>
+
+  
+    <section class="mt-5">
+      <h3 class="text-center text-primary mb-3">Team Members</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle text-center">
+          <thead class="table-primary">
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="employee-table">
+            <tr>
+              <td>Alice Johnson</td>
+              <td>Project Manager</td>
+              <td class="status-active">Active</td>
+            </tr>
+            <tr>
+              <td>Marcus Lee</td>
+              <td>Software Engineer</td>
+              <td class="status-leave">On Leave</td>
+            </tr>
+            <tr>
+              <td>Sophia Brown</td>
+              <td>UX Designer</td>
+              <td class="status-resigned">Resigned</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <div id="alert-container"></div>
+  </div>
+
+  
+  
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const table = document.getElementById("employee-table");
+      const statuses = table.querySelectorAll("td:last-child");
+      let hasInactive = false;
+
+      statuses.forEach((statusCell) => {
+        if (!statusCell.classList.contains("status-active")) {
+          hasInactive = true;
+        }
+      });
+
+      if (hasInactive) {
+        const alertContainer = document.getElementById("alert-container");
+        const alert = document.createElement("div");
+        alert.className = "alert alert-warning text-center mt-4";
+        alert.role = "alert";
+        alert.innerHTML = "<strong>Notice:</strong> Some team members are not currently active.";
+        alertContainer.appendChild(alert);
+      }
+    });
+  </script>
+
+</body>
+</html>
+    
+</body>
+</html>
