@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>form</title>
+</head>
+<body>
+   <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h3 class="card-title mb-4 text-center">Feedback form</h3>
+
+            <form>
+              
+              <div class="mb-3">
+                <label for="name" class="form-label"> Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="feedback" class="form-label">Feedback:</label>
+                <textarea class="form-control" id="feedback" rows="4" ></textarea>
+              </div>
+
+            
+              <div class="mb-3">
+                <label for="source" class="form-label">How did you find our site?</label>
+                <select class="form-select" id="source">
+                  <option selected disabled>Choose one...</option>
+                  <option>Instagram</option>
+                  <option>Facebook</option>
+                  <option>Friend or Colleague</option>
+                  <option>Advertisement</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              
+              <div class="mb-4">
+                <label class="form-label d-block">Satisfaction Level</label>
+                <div class="d-flex justify-content-between">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="s1" value="1">
+                    <label class="form-check-label" for="s1">1</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="s2" value="2">
+                    <label class="form-check-label" for="s2">2</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="s3" value="3">
+                    <label class="form-check-label" for="s3">3</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="s4" value="4">
+                    <label class="form-check-label" for="s4">4</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="s5" value="5">
+                    <label class="form-check-label" for="s5">5</label>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
