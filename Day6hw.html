@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>feedback form</title>
+</head>
+<body>
+     <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body p-4">
+            <h3 class="card-title text-center mb-4">Feedback Form</h3>
+            
+            <form>
+              
+              <div class="mb-3">
+                <label for="name" class="form-label"> Name</label>
+                <input type="text" class="form-control" id="name" >
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="feedback" class="form-label">Your Feedback</label>
+                <textarea class="form-control" id="feedback" rows="4" ></textarea>
+              </div>
+
+              
+              <div class="mb-3">
+                <label class="form-label d-block">Preferred Contact Method</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="Email" checked>
+                  <label class="form-check-label" for="contactEmail">Email</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="Phone">
+                  <label class="form-check-label" for="contactPhone">Phone</label>
+                </div>
+              </div>
+
+              
+              <div class="mb-4">
+                <label for="satisfaction" class="form-label">Satisfaction Level (1–10)</label>
+                <input type="range" class="form-range" min="1" max="10" id="satisfaction">
+                <div class="d-flex justify-content-between small text-muted">
+                  <span>1</span>
+                  <span>10</span>
+                </div>
+              </div>
+
+              
+              <div class="mb-4">
+                <label for="orderType" class="form-label">Type of Order</label>
+                <select class="form-select" id="orderType" required>
+                  <option selected disabled>Choose one...</option>
+                  <option value="Cake">Cake</option>
+                  <option value="Cookies">Cookies</option>
+                  <option value="Pastries">Pastries</option>
+                </select>
+              </div>
+
+              
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+ 
+
+
+    
+</body>
+</html>
